@@ -274,23 +274,6 @@ footer.site-footer {
   }
 }
 
-/* ===== TESTIMONIALS ===== */
-
-.testimonial {
-  text-align: center;
-}
-
-.testimonial__stars {
-  color: var(--interactive-primary);
-  letter-spacing: 2px;
-  margin-bottom: var(--space-sm);
-}
-
-.testimonial__role {
-  color: var(--text-muted-dark);
-  font-size: var(--font-size-sm);
-}
-
 /* ===== CTA SECTION ===== */
 
 .cta-section {
