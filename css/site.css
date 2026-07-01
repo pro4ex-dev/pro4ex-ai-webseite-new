@@ -1,0 +1,332 @@
+/* =====================================================
+   PRO4EX WEBSITE - SITE STYLES
+   Baut auf design-system.css auf (Tokens & Basis-Elemente).
+   Enthält: Dark-Mode-als-Default, Layout-Komponenten,
+   Platzhalter-Darstellung für noch fehlenden Content.
+   ===================================================== */
+
+/* Dark Mode als Default (Anforderung: "Authority" Vibe),
+   unabhängig von der OS-Farbschema-Präferenz. Die
+   @media(prefers-color-scheme: dark)-Regel in
+   design-system.css bleibt zusätzlich als Fallback aktiv. */
+:root {
+  --text-primary-light: var(--text-primary-dark);
+  --text-secondary-light: var(--text-secondary-dark);
+  --text-muted-light: var(--text-muted-dark);
+  --text-on-brand-light: var(--text-on-brand-dark);
+
+  --bg-primary-light: var(--bg-primary-dark);
+  --bg-secondary-light: var(--bg-secondary-dark);
+  --bg-tertiary-light: var(--bg-tertiary-dark);
+  --bg-accent-light: var(--bg-accent-dark);
+
+  --border-color-light: var(--border-color-dark);
+  --border-color-subtle-light: var(--border-color-subtle-dark);
+
+  --surface-1-light: var(--surface-1-dark);
+  --surface-2-light: var(--surface-2-dark);
+  --surface-3-light: var(--surface-3-dark);
+
+  --button-secondary-border: var(--color-white);
+  --button-secondary-text: var(--color-white);
+  --button-secondary-hover-bg: rgba(255, 255, 255, 0.1);
+
+  --card-bg: var(--bg-primary-dark);
+  --card-border: var(--border-color-dark);
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary-dark) 0%, #1a2847 100%);
+  background-attachment: fixed;
+}
+
+/* ===== HEADER / NAV ===== */
+
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color-dark);
+}
+
+.nav {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--space-md) var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.nav__logo img {
+  width: clamp(40px, 8vw, 56px);
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+  margin: 0;
+}
+
+.nav__links a {
+  color: var(--text-primary-light);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav__links a[aria-current="page"] {
+  color: var(--interactive-primary);
+}
+
+@media (max-width: 480px) {
+  .nav__links {
+    gap: var(--space-md);
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* ===== FOOTER ===== */
+
+footer.site-footer {
+  border-top: 1px solid var(--border-color-dark);
+  margin-top: var(--space-3xl);
+  padding: var(--space-2xl) 0;
+}
+
+.footer__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.footer__copy {
+  color: var(--text-muted-dark);
+  font-size: var(--font-size-sm);
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  padding: var(--space-3xl) 0;
+  text-align: center;
+}
+
+.hero__eyebrow {
+  color: var(--interactive-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+.section__intro {
+  max-width: 760px;
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+/* ===== GRIDS ===== */
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 960px) {
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid--4,
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ICON ===== */
+
+.icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+  margin-bottom: var(--space-md);
+}
+
+.icon--lg {
+  width: 56px;
+  height: 56px;
+}
+
+/* ===== TWO-COLUMN LAYOUT (About) ===== */
+
+.two-col {
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ALTERNATING SERVICE BLOCKS ===== */
+
+.service-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--border-color-subtle-dark);
+}
+
+.service-block:nth-child(even) .service-block__media {
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  .service-block,
+  .service-block:nth-child(even) .service-block__media {
+    grid-template-columns: 1fr;
+    order: 0;
+  }
+}
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial__stars {
+  color: var(--interactive-primary);
+  letter-spacing: 2px;
+  margin-bottom: var(--space-sm);
+}
+
+.testimonial__role {
+  color: var(--text-muted-dark);
+  font-size: var(--font-size-sm);
+}
+
+/* ===== CTA SECTION ===== */
+
+.cta-section {
+  text-align: center;
+  background-color: var(--bg-secondary-dark);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+}
+
+/* ===== CONTACT ===== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-2xl);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-field {
+  margin-bottom: var(--space-md);
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+}
+
+.form-field--checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.form-field--checkbox input {
+  width: auto;
+}
+
+/* ===== PLACEHOLDER (fehlender Content / fehlende Bilder) =====
+   Deutlich als "noch zu befüllen" markiert - kein Fake-Content. */
+
+.placeholder-box {
+  border: 2px dashed var(--border-color-dark);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary-dark);
+  color: var(--text-muted-dark);
+  padding: var(--space-lg);
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+
+.placeholder-image {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-image--square {
+  aspect-ratio: 1 / 1;
+}
+
+.placeholder-text {
+  font-style: italic;
+}

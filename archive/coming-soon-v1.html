@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro4Ex Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Flex', sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1a2847 100%);
+            color: #FFFFFF;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            margin-bottom: 40px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0057CC;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: slideUp 0.6s ease-out 0.1s both;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #CBD5E1;
+            margin-bottom: 40px;
+            font-weight: 300;
+            line-height: 1.6;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .message {
+            background: rgba(0, 87, 204, 0.1);
+            border-left: 4px solid #0057CC;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            animation: slideUp 0.6s ease-out 0.3s both;
+        }
+
+        .message p {
+            font-size: 20px;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #0057CC;
+            margin: 0 auto 30px;
+            animation: slideUp 0.6s ease-out 0.4s both;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideUp 0.6s ease-out 0.5s both;
+        }
+
+        .contact-info p {
+            color: #CBD5E1;
+            font-size: 14px;
+            margin: 8px 0;
+        }
+
+        .email-link {
+            color: #0057CC;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #0044a3;
+            text-decoration: underline;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Dark mode (default) */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, #0F172A 0%, #1a2847 100%);
+            }
+        }
+
+        /* Light mode support */
+        @media (prefers-color-scheme: light) {
+            body {
+                background: linear-gradient(135deg, #FFFFFF 0%, #F5F7FA 100%);
+                color: #121212;
+            }
+
+            h1 {
+                color: #121212;
+            }
+
+            .tagline {
+                color: #6B7280;
+            }
+
+            .message {
+                background: rgba(0, 87, 204, 0.05);
+                border-left-color: #0057CC;
+            }
+
+            .message p {
+                color: #121212;
+            }
+
+            .contact-info p {
+                color: #6B7280;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-text">PRO4EX</div>
+        </div>
+
+        <h1>Etwas Großartiges entsteht</h1>
+
+        <p class="tagline">
+            Executive Consulting für Supply Chain Excellence
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="message">
+            <p>Die Seite wird aktuell erstellt und geht demnächst online</p>
+        </div>
+
+        <div class="contact-info">
+            <p>In der Zwischenzeit gerne Kontakt aufnehmen:</p>
+            <p><a href="mailto:jan.michaelsen@pro4ex.consulting" class="email-link">jan.michaelsen@pro4ex.consulting</a></p>
+        </div>
+    </div>
+</body>
+</html>

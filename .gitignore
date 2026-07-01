@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office / OneDrive lock & temp files
+~$*
+*.tmp
+
+# Editor
+.vscode/
+.idea/
+
+# Local Claude Code settings
+.claude/settings.local.json

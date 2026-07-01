@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pro4Ex Consulting - Executive Management Consulting für Supply Chain Excellence">
+    <title>Pro4Ex Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary-blue: #0057CC;
+            --color-soft-black: #121212;
+            --color-dark-navy: #0F172A;
+            --color-light-gray: #CBD5E1;
+            --color-white: #FFFFFF;
+            --color-border-gray: #1E293B;
+            --font-family: 'Roboto Flex', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(135deg, var(--color-dark-navy) 0%, #1a2847 100%);
+            color: var(--color-white);
+            line-height: 1.6;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border-gray);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-primary-blue);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-light-gray);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-primary-blue);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            animation: slideUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-tagline {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-primary-blue);
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            color: var(--color-white);
+            animation: slideUp 0.8s ease-out 0.3s both;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--color-light-gray);
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-weight: 300;
+            animation: slideUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-description {
+            font-size: 16px;
+            color: var(--color-light-gray);
+            margin-bottom: 50px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: slideUp 0.8s ease-out 0.5s both;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: var(--color-primary-blue);
+            margin: 0 auto 50px;
+            animation: slideUp 0.8s ease-out 0.45s both;
+        }
+
+        /* CTA BUTTON */
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: var(--color-primary-blue);
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--color-primary-blue);
+            cursor: pointer;
+            animation: slideUp 0.8s ease-out 0.6s both;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: var(--color-primary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 87, 204, 0.2);
+        }
+
+        /* FOOTER */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid var(--color-border-gray);
+            padding: 50px 20px;
+            margin-top: 100px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact p {
+            color: var(--color-light-gray);
+            font-size: 14px;
+            margin: 8px 0;
+        }
+
+        .footer-email {
+            color: var(--color-primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .footer-email:hover {
+            color: var(--color-white);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid var(--color-border-gray);
+            color: var(--color-light-gray);
+            font-size: 12px;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 42px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: 40px 20px;
+            }
+
+            nav {
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .hero {
+                min-height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#" class="logo">PRO4EX</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="mailto:jan.michaelsen@pro4ex.consulting">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-tagline">Executive Consulting</div>
+
+            <h1>Creating Value For Clients</h1>
+            <p class="hero-subtitle">
+                Strategische Expertise trifft operative Exzellenz. Mit 28 Jahren Führungserfahrung in der Automobilindustrie und langjähriger Beratungserfahrung transformiere ich komplexe Herausforderungen – von C-Level-Strategien bis zur operativen Umsetzung – in messbare Erfolge.
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="hero-description">
+                Jan Michaelsen ist Executive Management Consultant. An der Schnittstelle zwischen Strategie und Umsetzung entstehen die schwierigsten Herausforderungen – besonders in globalen Lieferketten bei Einkauf, Vertrieb und Qualität. Ich helfe Unternehmen, diese zu lösen – gestützt auf 28 Jahre bei Mercedes-Benz und umfangreiche Beratungserfahrung. Mein Fokus: Strategieentwicklung, verlässliche Umsetzung, stabile Zusammenarbeit und nachhaltige Konfliktlösung.
+            </p>
+
+            <a href="mailto:jan.michaelsen@pro4ex.consulting" class="cta-button">Jetzt Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <p>Bereit für ein unverbindliches Gespräch?</p>
+                <p><a href="mailto:jan.michaelsen@pro4ex.consulting" class="footer-email">jan.michaelsen@pro4ex.consulting</a></p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pro4Ex Consulting. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
