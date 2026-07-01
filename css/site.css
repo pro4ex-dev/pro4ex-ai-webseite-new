@@ -40,10 +40,15 @@
      Nav-Link) daher ein helleres Blau, das AA/AAA auf Dunkel einhaelt. */
   --text-link-dark: #6EA8FE;
   --text-link-dark-hover: #9AC4FF;
+}
 
-  /* Mehr Luft links/rechts als design-system.css-Default (dort auf
-     Mobile fix 16px) - Inhalt wirkte zu nah am Bildschirmrand. */
-  --container-padding: clamp(20px, 6vw, 40px);
+/* Mehr Luft links/rechts, aber nur auf Mobile - dort war der Content
+   zu nah am Bildschirmrand (design-system.css setzt hier sonst fix 16px).
+   Desktop/Tablet bleiben beim Original-Wert aus design-system.css. */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 28px;
+  }
 }
 
 a {
@@ -140,7 +145,8 @@ footer.site-footer {
 /* ===== HERO ===== */
 
 .hero {
-  padding: var(--space-3xl) 0;
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
   text-align: center;
 }
 
@@ -181,7 +187,8 @@ footer.site-footer {
 /* ===== SECTIONS ===== */
 
 .section {
-  padding: var(--space-2xl) 0;
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
 }
 
 .section__intro {
