@@ -130,6 +130,19 @@ footer.site-footer {
   font-size: var(--font-size-sm);
 }
 
+.hero__quote {
+  display: block;
+  white-space: nowrap;
+  font-size: clamp(20px, 6vw, 44px);
+}
+
+.hero__quote-context {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+}
+
 .hero__actions {
   display: flex;
   gap: var(--space-md);
