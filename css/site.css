@@ -122,6 +122,11 @@ footer.site-footer {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+  text-align-last: left;
+}
+
 .hero__eyebrow {
   color: var(--interactive-primary);
   text-transform: uppercase;
