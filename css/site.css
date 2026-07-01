@@ -153,6 +153,9 @@ footer.site-footer {
 .text-justify {
   text-align: justify;
   text-align-last: left;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .hero__eyebrow {
