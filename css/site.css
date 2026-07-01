@@ -33,6 +33,21 @@
 
   --card-bg: var(--bg-primary-dark);
   --card-border: var(--border-color-dark);
+
+  /* CI-Blau (--color-blue-600) ist nur auf hellem Hintergrund AAA-konform
+     (8.2:1). Auf unserem dunklen Standard-Hintergrund liefert derselbe Ton
+     nur ~2.75:1 Kontrast. Fuer Text auf Dunkel (Links, Eyebrow, aktiver
+     Nav-Link) daher ein helleres Blau, das AA/AAA auf Dunkel einhaelt. */
+  --text-link-dark: #6EA8FE;
+  --text-link-dark-hover: #9AC4FF;
+}
+
+a {
+  color: var(--text-link-dark);
+}
+
+a:hover {
+  color: var(--text-link-dark-hover);
 }
 
 html {
@@ -85,7 +100,7 @@ header.site-header {
 }
 
 .nav__links a[aria-current="page"] {
-  color: var(--interactive-primary);
+  color: var(--text-link-dark);
 }
 
 @media (max-width: 480px) {
@@ -128,7 +143,7 @@ footer.site-footer {
 }
 
 .hero__eyebrow {
-  color: var(--interactive-primary);
+  color: var(--text-link-dark);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: var(--font-weight-semibold);
