@@ -40,6 +40,10 @@
      Nav-Link) daher ein helleres Blau, das AA/AAA auf Dunkel einhaelt. */
   --text-link-dark: #6EA8FE;
   --text-link-dark-hover: #9AC4FF;
+
+  /* Mehr Luft links/rechts als design-system.css-Default (dort auf
+     Mobile fix 16px) - Inhalt wirkte zu nah am Bildschirmrand. */
+  --container-padding: clamp(20px, 6vw, 40px);
 }
 
 a {
