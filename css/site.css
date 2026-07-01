@@ -377,6 +377,11 @@ footer.site-footer {
   aspect-ratio: 1 / 1;
 }
 
+.hero-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
 .placeholder-text {
   font-style: italic;
 }
