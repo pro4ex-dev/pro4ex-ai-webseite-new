@@ -126,7 +126,10 @@ footer.site-footer {
 }
 
 .footer__copy {
-  color: var(--text-muted-dark);
+  /* text-muted-dark (#94A3B8) faellt am helleren Ende des Hintergrund-
+     Gradienten auf ~5.7:1 und verfehlt AAA; text-secondary-dark haelt
+     durchgehend ueber 9:1. */
+  color: var(--text-secondary-dark);
   font-size: var(--font-size-sm);
 }
 
