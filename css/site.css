@@ -352,6 +352,13 @@ footer.site-footer {
   border-radius: var(--radius-lg);
 }
 
+.portrait-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
 .placeholder-text {
   font-style: italic;
 }
