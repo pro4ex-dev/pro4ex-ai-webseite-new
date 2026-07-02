@@ -266,6 +266,13 @@ footer.site-footer {
   order: 2;
 }
 
+.service-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
 @media (max-width: 768px) {
   .service-block,
   .service-block:nth-child(even) .service-block__media {
