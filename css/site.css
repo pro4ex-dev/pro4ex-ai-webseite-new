@@ -359,6 +359,28 @@ footer.site-footer {
   border-radius: var(--radius-lg);
 }
 
+/* Bild fliesst im Fliesstext mit, statt in einer eigenen Spalte -
+   verhindert Leerraum, wenn der Text laenger ist als das Bild hoch. */
+.bio-flow {
+  max-width: 760px;
+}
+
+.portrait-image--float {
+  float: left;
+  width: 280px;
+  max-width: 45%;
+  margin: 0 var(--space-xl) var(--space-lg) 0;
+}
+
+@media (max-width: 600px) {
+  .portrait-image--float {
+    float: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto var(--space-lg);
+  }
+}
+
 .placeholder-text {
   font-style: italic;
 }
