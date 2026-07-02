@@ -289,6 +289,26 @@ footer.site-footer {
   max-width: 480px;
 }
 
+.contact-info-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: var(--space-md);
+  row-gap: var(--space-sm);
+  margin: 0;
+}
+
+.contact-info-list dt {
+  font-weight: var(--font-weight-semibold);
+}
+
+.contact-info-list dd {
+  margin: 0;
+}
+
+.contact-info-spacer {
+  height: var(--space-md);
+}
+
 /* ===== PLACEHOLDER (fehlender Content / fehlende Bilder) =====
    Deutlich als "noch zu befüllen" markiert - kein Fake-Content. */
 
