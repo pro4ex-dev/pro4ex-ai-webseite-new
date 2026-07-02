@@ -287,6 +287,8 @@ footer.site-footer {
 
 .contact-card {
   max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .contact-info-list {
