@@ -285,42 +285,8 @@ footer.site-footer {
 
 /* ===== CONTACT ===== */
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: var(--space-2xl);
-}
-
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.form-field {
-  margin-bottom: var(--space-md);
-}
-
-.form-field label {
-  display: block;
-  margin-bottom: var(--space-xs);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-}
-
-.form-field input,
-.form-field textarea {
-  width: 100%;
-}
-
-.form-field--checkbox {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.form-field--checkbox input {
-  width: auto;
+.contact-card {
+  max-width: 480px;
 }
 
 /* ===== PLACEHOLDER (fehlender Content / fehlende Bilder) =====
