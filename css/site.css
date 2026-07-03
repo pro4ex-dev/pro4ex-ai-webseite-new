@@ -150,6 +150,14 @@ footer.site-footer {
   text-align: center;
 }
 
+.hero h1 {
+  margin-bottom: var(--space-2xl);
+}
+
+.hero .text-justify {
+  margin-bottom: var(--space-xl);
+}
+
 .text-justify {
   text-align: justify;
   text-align-last: left;
