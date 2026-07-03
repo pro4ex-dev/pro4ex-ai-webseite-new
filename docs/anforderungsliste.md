@@ -166,7 +166,7 @@ SUMME MONATLICH                    €247
   Description (250 Wörter)
   [CTA]
 
-[SERVICE 4: Strategic Consulting]
+[SERVICE 4: Strategie Beratung]
   Icon + Title (28pt)
   Description (250 Wörter)
   [CTA]
@@ -311,7 +311,7 @@ TOTAL:       ~2450-2800 Wörter
    
    - Supplier Management
    - Process Improvement
-   - Strategic Consulting
+   - Strategie Beratung
 
 4. **Testimonials** (2-3 anonym)
    - Zitat (1-2 Sätze)

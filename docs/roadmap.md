@@ -82,7 +82,7 @@ In der nächsten Phase brauchst du:
 □ Service 1: Supply Chain Optimization (40-50 Wörter)
 □ Service 2: Supplier Management (40-50 Wörter)
 □ Service 3: Process Improvement (40-50 Wörter)
-□ Service 4: Strategic Consulting (40-50 Wörter)
+□ Service 4: Strategie Beratung (40-50 Wörter)
 ```
 
 ### 2. ABOUT PAGE (1 Stunde)
