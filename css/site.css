@@ -183,7 +183,6 @@ footer.site-footer {
 
 .hero__eyebrow {
   color: var(--text-link-dark);
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-sm);
