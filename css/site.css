@@ -182,6 +182,12 @@ footer.site-footer {
   margin-top: var(--space-lg);
 }
 
+/* ===== LEGAL PAGES (Impressum, Datenschutz) ===== */
+
+.legal-content h2 {
+  margin-top: var(--space-2xl);
+}
+
 /* ===== SECTIONS ===== */
 
 .section {
