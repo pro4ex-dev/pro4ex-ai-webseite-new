@@ -114,8 +114,8 @@ header.site-header {
 
 @media (max-width: 480px) {
   .nav__links {
-    gap: var(--space-md);
-    font-size: var(--font-size-sm);
+    gap: var(--space-sm);
+    font-size: var(--font-size-xs);
   }
 }
 
@@ -127,6 +127,13 @@ header.site-header {
   border-radius: var(--radius-md);
   padding: 4px 10px;
   white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .nav__lang {
+    font-size: var(--font-size-xs);
+    padding: 2px 6px;
+  }
 }
 
 .nav__lang:hover {
