@@ -393,3 +393,21 @@ footer.site-footer {
 .placeholder-text {
   font-style: italic;
 }
+
+.icon-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.icon-list li .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
