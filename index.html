@@ -40,14 +40,6 @@
     "sameAs": ["https://linkedin.com/in/jan-michaelsen"]
   }
   </script>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X86B8JTDRR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X86B8JTDRR');
-  </script>
   <link rel="canonical" href="https://pro4ex.consulting/">
   <link rel="alternate" hreflang="de" href="https://pro4ex.consulting/">
   <link rel="alternate" hreflang="en" href="https://pro4ex.consulting/en/index.html">
@@ -154,6 +146,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cookie-Banner -->
+  <div id="gdpr-banner">
+    <div id="gdpr-banner-text">
+      Diese Website nutzt Google Analytics zur Analyse der Nutzung. Mit „Akzeptieren" stimmen Sie der Verarbeitung Ihrer Daten zu. Siehe <a href="datenschutz.html" style="color: inherit; text-decoration: underline;">Datenschutz</a>.
+    </div>
+    <div id="gdpr-banner-buttons">
+      <button onclick="window.gdprAccept()">Akzeptieren</button>
+      <button onclick="window.gdprReject()">Ablehnen</button>
+    </div>
+  </div>
+
+  <script src="assets/js/cookie-banner.js"></script>
 
 </body>
 </html>

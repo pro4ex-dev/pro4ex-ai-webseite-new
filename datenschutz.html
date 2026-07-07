@@ -17,14 +17,6 @@
   <link rel="alternate" hreflang="de" href="https://pro4ex.consulting/datenschutz.html">
   <link rel="alternate" hreflang="en" href="https://pro4ex.consulting/en/datenschutz.html">
   <link rel="alternate" hreflang="x-default" href="https://pro4ex.consulting/datenschutz.html">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X86B8JTDRR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X86B8JTDRR');
-  </script>
   <link rel="icon" href="assets/images/logo/pro4ex-favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.png">
   <link rel="stylesheet" href="css/design-system.css">
@@ -136,7 +128,14 @@
       <h2>4. Datenerfassung auf dieser Website</h2>
 
       <h3>Cookies</h3>
-      <p>Diese Website verwendet aktuell keine Cookies. Sollte sich dies ändern, wird diese Datenschutzerklärung entsprechend aktualisiert.</p>
+      <p>Diese Website nutzt Cookies von Google Analytics zur Analyse der Website-Nutzung. Die Speicherung von Cookies erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung des Nutzers). Der Nutzer wird beim Besuch der Website durch ein Cookie-Banner aufgefordert, der Verarbeitung seiner Daten durch Google Analytics zuzustimmen oder diese abzulehnen.</p>
+      <p><strong>Google Analytics:</strong> Diese Website nutzt Google Analytics (Messcode: G-X86B8JTDRR) zur Analyse der Website-Nutzung. Google Analytics setzt folgende Cookies:</p>
+      <ul>
+        <li><code>_ga</code> – speichert eine eindeutige Nutzer-ID (Gültigkeit: 2 Jahre)</li>
+        <li><code>_ga_*</code> – verfolgt Sitzungsparameter (Gültigkeit: 1 Minute bis 2 Jahre)</li>
+      </ul>
+      <p>Die Datenverarbeitung erfolgt nur, wenn der Nutzer dem Cookie-Banner zustimmt. Im Falle der Ablehnung wird kein Google-Analytics-Code geladen. Weitere Informationen zur Datenverarbeitung durch Google Analytics finden Sie in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google-Datenschutzerklärung</a>.</p>
+      <p>Der Nutzer kann seine Einwilligung jederzeit widerrufen, indem er seinen Browser-Speicher (localStorage) löscht oder das Cookie-Banner erneut nutzt.</p>
 
       <h3>Server-Log-Dateien</h3>
       <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
@@ -185,6 +184,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cookie-Banner -->
+  <div id="gdpr-banner">
+    <div id="gdpr-banner-text">
+      Diese Website nutzt Google Analytics zur Analyse der Nutzung. Mit „Akzeptieren" stimmen Sie der Verarbeitung Ihrer Daten zu. Siehe <a href="datenschutz.html" style="color: inherit; text-decoration: underline;">Datenschutz</a>.
+    </div>
+    <div id="gdpr-banner-buttons">
+      <button onclick="window.gdprAccept()">Akzeptieren</button>
+      <button onclick="window.gdprReject()">Ablehnen</button>
+    </div>
+  </div>
+
+  <script src="assets/js/cookie-banner.js"></script>
 
 </body>
 </html>

@@ -17,14 +17,6 @@
   <link rel="alternate" hreflang="de" href="https://pro4ex.consulting/datenschutz.html">
   <link rel="alternate" hreflang="en" href="https://pro4ex.consulting/en/datenschutz.html">
   <link rel="alternate" hreflang="x-default" href="https://pro4ex.consulting/datenschutz.html">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X86B8JTDRR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X86B8JTDRR');
-  </script>
   <link rel="icon" href="../assets/images/logo/pro4ex-favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../assets/images/logo/apple-touch-icon.png">
   <link rel="stylesheet" href="../css/design-system.css">
@@ -137,7 +129,14 @@
       <h2>4. Data Collection on This Website</h2>
 
       <h3>Cookies</h3>
-      <p>This website does not currently use cookies. Should this change, this privacy policy will be updated accordingly.</p>
+      <p>This website uses cookies from Google Analytics to analyze website usage. Cookies are stored on the basis of Art. 6(1)(a) GDPR (user consent). Upon visiting the website, users are asked via a cookie banner to consent to or reject data processing by Google Analytics.</p>
+      <p><strong>Google Analytics:</strong> This website uses Google Analytics (Measurement ID: G-X86B8JTDRR) to analyze website usage. Google Analytics sets the following cookies:</p>
+      <ul>
+        <li><code>_ga</code> – stores a unique user ID (validity: 2 years)</li>
+        <li><code>_ga_*</code> – tracks session parameters (validity: 1 minute to 2 years)</li>
+      </ul>
+      <p>Data processing only occurs if the user consents to the cookie banner. If rejected, no Google Analytics code is loaded. For more information on data processing by Google Analytics, see the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      <p>Users can revoke consent at any time by clearing their browser's local storage or using the cookie banner again.</p>
 
       <h3>Server Log Files</h3>
       <p>The provider of these pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>
@@ -186,6 +185,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cookie-Banner -->
+  <div id="gdpr-banner">
+    <div id="gdpr-banner-text">
+      This website uses Google Analytics to analyze usage. By clicking "Accept" you consent to data processing. See <a href="datenschutz.html" style="color: inherit; text-decoration: underline;">Privacy</a>.
+    </div>
+    <div id="gdpr-banner-buttons">
+      <button onclick="window.gdprAccept()">Accept</button>
+      <button onclick="window.gdprReject()">Reject</button>
+    </div>
+  </div>
+
+  <script src="../assets/js/cookie-banner.js"></script>
 
 </body>
 </html>
