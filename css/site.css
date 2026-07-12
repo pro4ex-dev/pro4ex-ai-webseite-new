@@ -404,7 +404,7 @@ footer.site-footer {
 .hero-image {
   width: 100%;
   border-radius: var(--radius-lg);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 .portrait-image {
