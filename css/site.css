@@ -514,3 +514,25 @@ footer.site-footer {
 #gdpr-banner button:last-child:hover {
   background: rgba(255, 255, 255, 0.05);
 }
+
+/* Image Credits / Bilduntertitel */
+.image-credit {
+  font-size: 0.85rem;
+  color: var(--text-secondary-dark, #999);
+  text-align: center;
+  margin-top: var(--space-xs, 0.5rem);
+  padding-top: var(--space-xs, 0.5rem);
+  border-top: 1px solid var(--border-color-subtle-dark, #333);
+  font-style: italic;
+}
+
+.image-credit a {
+  color: var(--brand-primary, #0057CC);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.image-credit a:hover {
+  text-decoration: underline;
+  color: #004399;
+}
