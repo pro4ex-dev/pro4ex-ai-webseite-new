@@ -519,9 +519,10 @@ footer.site-footer {
 .image-credit {
   font-size: 0.85rem;
   color: var(--text-secondary-dark, #999);
-  text-align: center;
+  text-align: left;
   margin-top: var(--space-xs, 0.5rem);
   padding-top: var(--space-xs, 0.5rem);
+  margin-bottom: var(--space-md, 1.5rem);
   border-top: 1px solid var(--border-color-subtle-dark, #333);
   font-style: italic;
 }
